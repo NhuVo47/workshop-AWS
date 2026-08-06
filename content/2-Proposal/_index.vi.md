@@ -1,145 +1,202 @@
 ---
-title: "Đề xuất dự án"
+title: "Bản đề xuất"
+date: 2026-08-04
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
-### Triển khai API Serverless với API Gateway, Lambda, Cognito và DynamoDB
+---
 
-### 📄 1. Tóm tắt điều hành
+# Automatic Image Optimization System on AWS
 
-Dự án này tập trung xây dựng một hệ thống web nghe nhạc trực tuyến dựa trên kiến trúc serverless, trong đó các thành phần cốt lõi bao gồm Amazon API Gateway, AWS Lambda và Amazon Cognito. Hệ thống cho phép người dùng truy cập và nghe nhạc trực tuyến, quản lý danh sách phát (playlist), đồng thời hỗ trợ các chức năng quản lý nội dung cơ bản.
+## Giải pháp tối ưu hóa hình ảnh tự động sử dụng kiến trúc AWS Serverless
 
-Trong kiến trúc đề xuất, API Gateway đóng vai trò là điểm tiếp nhận và định tuyến các yêu cầu từ phía client đến các Lambda function tương ứng. AWS Lambda chịu trách nhiệm xử lý logic nghiệp vụ backend và thực hiện các hoạt động giao tiếp với kho lưu trữ dữ liệu S3 và DynamoDB, trong khi Amazon Cognito đảm bảo việc xác thực và phân quyền người dùng thông qua cơ chế token. Cách tiếp cận này giúp loại bỏ nhu cầu quản lý hạ tầng máy chủ truyền thống, đồng thời cung cấp khả năng mở rộng tự động và tối ưu hóa tài nguyên theo nhu cầu sử dụng.
+### 1. Tóm tắt điều hành
 
-Việc áp dụng mô hình serverless không chỉ giúp hệ thống đạt được hiệu năng và khả năng mở rộng cao mà còn tối ưu chi phí vận hành thông qua mô hình pay-as-you-go. Bên cạnh đó, kiến trúc được thiết kế theo hướng tách biệt rõ ràng giữa frontend và backend, góp phần nâng cao khả năng bảo trì, mở rộng và tích hợp trong tương lai.
+Automatic Image Optimization System là một nền tảng giúp tự động tối ưu hóa hình ảnh sau khi người dùng tải lên. Hệ thống hướng đến các cá nhân hoặc doanh nghiệp có nhu cầu lưu trữ số lượng lớn hình ảnh nhưng vẫn đảm bảo chất lượng hiển thị và tiết kiệm dung lượng lưu trữ.
+
+Người dùng chỉ cần tải ảnh lên thông qua giao diện web. Sau đó, AWS Lambda sẽ tự động xử lý, nén và tối ưu ảnh, đồng thời tạo thumbnail và lưu kết quả vào Amazon S3. Toàn bộ thông tin về quá trình xử lý sẽ được lưu trong Amazon DynamoDB để phục vụ tra cứu lịch sử. Hệ thống sử dụng AWS KMS để mã hóa dữ liệu, Amazon CloudWatch để giám sát và Amazon SNS để gửi thông báo khi xảy ra lỗi.
+
+Kiến trúc Serverless giúp hệ thống có khả năng mở rộng linh hoạt, giảm chi phí vận hành và hạn chế việc quản lý máy chủ.
 
 ---
 
-### 📌 2. Tuyên bố vấn đề
+### 2. Tuyên bố vấn đề
 
 #### Vấn đề hiện tại
 
-Trong bối cảnh nhu cầu chia sẻ và tiếp cận các sản phẩm âm nhạc cá nhân ngày càng gia tăng, các nền tảng hiện có vẫn chưa đáp ứng tốt nhu cầu của người dùng về tính linh hoạt và khả năng cá nhân hóa. Đặc biệt, đối với các nghệ sĩ độc lập, việc đăng tải và quản lý nội dung còn gặp nhiều khó khăn do quy trình phức tạp và thiếu quyền kiểm soát.
+Nhiều cá nhân và doanh nghiệp cần tối ưu hình ảnh trước khi lưu trữ hoặc sử dụng trên website nhằm giảm dung lượng nhưng vẫn giữ chất lượng. Tuy nhiên, quá trình này thường được thực hiện thủ công bằng các phần mềm chỉnh sửa hoặc dịch vụ trực tuyến, gây mất thời gian và khó quản lý khi số lượng ảnh lớn.
 
-Ngoài ra, nhiều hệ thống hiện tại có kiến trúc phức tạp, chi phí vận hành cao và khó mở rộng khi số lượng người dùng tăng. Các vấn đề liên quan đến xác thực người dùng, bảo mật API và quản lý truy cập cũng là những thách thức lớn trong quá trình xây dựng hệ thống.
-
-Do đó, cần thiết phải xây dựng một nền tảng web đơn giản, linh hoạt, cho phép người dùng dễ dàng tương tác với hệ thống, đồng thời đảm bảo khả năng mở rộng, bảo mật và tối ưu chi phí.
-
----
+Ngoài ra, nhiều hệ thống chỉ tập trung vào việc nén ảnh mà chưa cung cấp khả năng theo dõi lịch sử xử lý, quản lý metadata hay giám sát quá trình xử lý.
 
 #### Giải pháp
 
-Để giải quyết các vấn đề trên, hệ thống được xây dựng dựa trên kiến trúc serverless với ba thành phần chính:
+Nhóm đề xuất xây dựng một hệ thống tối ưu hóa hình ảnh tự động trên nền tảng AWS.
 
-- **Amazon API Gateway:** đóng vai trò là gateway trung gian, tiếp nhận request từ client và định tuyến đến các Lambda function
-- **AWS Lambda:** xử lý toàn bộ logic nghiệp vụ của hệ thống
-- **Amazon Cognito:** đảm bảo xác thực và phân quyền người dùng thông qua JWT token
-- **DynamoDB:** lưu trữ metadata của hệ thống.
+Người dùng tải ảnh lên thông qua ứng dụng web. Backend Spring Boot lưu ảnh vào Amazon S3 Input Bucket và ghi nhận metadata ban đầu. Khi có ảnh mới, Amazon S3 sẽ kích hoạt AWS Lambda để thực hiện tối ưu hóa ảnh theo cấu hình người dùng lựa chọn.
 
-Luồng xử lý của hệ thống được thiết kế đơn giản và hiệu quả: client gửi request đến API Gateway, sau đó request được xác thực thông qua Cognito và chuyển đến Lambda để xử lý. Kết quả được trả về client thông qua API Gateway.
+Ảnh sau khi xử lý sẽ được lưu vào Amazon S3 Output Bucket cùng với thumbnail. Metadata sẽ được cập nhật vào Amazon DynamoDB để phục vụ truy vấn lịch sử xử lý. AWS CloudWatch thu thập log và giám sát hoạt động của hệ thống, trong khi Amazon SNS gửi cảnh báo khi quá trình xử lý gặp lỗi. AWS KMS được sử dụng để mã hóa dữ liệu lưu trữ trên S3 nhằm tăng cường bảo mật.
 
-Giải pháp này giúp hệ thống:
+Hệ thống cung cấp giao diện web cho phép người dùng:
 
-- Tăng khả năng mở rộng tự động
-- Giảm chi phí vận hành
-- Đảm bảo bảo mật thông qua cơ chế xác thực tập trung
-- Đơn giản hóa kiến trúc hệ thống
+- Đăng ký và đăng nhập.
+- Tải lên nhiều ảnh cùng lúc.
+- Theo dõi trạng thái xử lý.
+- Xem lịch sử tối ưu hóa.
+- Tải xuống ảnh đã xử lý.
 
----
+Ngoài ra, quản trị viên có thể theo dõi thống kê sử dụng và quản lý tài khoản người dùng.
 
-### 📌 3. Kiến trúc giải pháp
+#### Lợi ích và hoàn vốn đầu tư (ROI)
 
-Kiến trúc hệ thống được xây dựng theo mô hình serverless, tập trung vào luồng xử lý API:
+Hệ thống giúp giảm đáng kể thời gian tối ưu hóa hình ảnh thủ công, đồng thời tiết kiệm dung lượng lưu trữ và băng thông truyền tải. Việc tự động hóa toàn bộ quy trình giúp giảm công sức quản lý, nâng cao hiệu quả làm việc và dễ dàng mở rộng khi số lượng người dùng tăng lên.
 
-![ConnectPrivate](/AWS_Workshop/images/aws_architec.png)
-
-- Người dùng gửi request từ frontend đến API Gateway
-- API Gateway sử dụng Cognito Authorizer để xác thực người dùng
-- Sau khi xác thực thành công, request được chuyển đến Lambda
-- Lambda xử lý logic nghiệp vụ lấy dữ liệu từ DynamoDB và trả kết quả về client
-
-Các thành phần chính:
-
-- **API Gateway:** quản lý API, định tuyến request
-- **Lambda:** xử lý logic backend theo từng chức năng
-- **Cognito:** quản lý user, authentication và authorization
-- **DynamoDB:** lưu trữ dữ liệu cho hoạt động hệ thống.
-
-Kiến trúc này giúp đảm bảo tính mở rộng, bảo mật và hiệu năng mà không cần quản lý server.
+Nhờ sử dụng các dịch vụ Serverless của AWS, chi phí vận hành chỉ phát sinh khi có yêu cầu xử lý, giúp tối ưu ngân sách cho các hệ thống vừa và nhỏ.
 
 ---
 
-### 📌 4. Triển khai kỹ thuật
+### 3. Kiến trúc giải pháp
+
+Hệ thống áp dụng kiến trúc AWS Serverless kết hợp với ứng dụng Backend Spring Boot và Frontend React.
+
+Luồng xử lý chính:
+
+1. Người dùng tải ảnh lên thông qua giao diện web.
+2. Backend lưu ảnh vào Amazon S3 Input Bucket.
+3. Amazon S3 phát sinh sự kiện ObjectCreated.
+4. AWS Lambda được kích hoạt để xử lý ảnh.
+5. Lambda tối ưu hóa ảnh và tạo thumbnail.
+6. Kết quả được lưu vào Amazon S3 Output Bucket.
+7. Metadata được cập nhật vào Amazon DynamoDB.
+8. CloudWatch ghi log và theo dõi hoạt động.
+9. SNS gửi thông báo nếu xảy ra lỗi.
+10. Người dùng xem lịch sử và tải ảnh đã xử lý.
+
+_(Thêm sơ đồ kiến trúc của nhóm tại đây.)_
+
+#### Dịch vụ AWS sử dụng
+
+- Amazon S3: lưu trữ ảnh gốc và ảnh sau khi tối ưu.
+- AWS Lambda: xử lý và tối ưu hóa hình ảnh.
+- Amazon DynamoDB: lưu metadata và lịch sử xử lý.
+- AWS KMS: mã hóa dữ liệu trên Amazon S3.
+- Amazon CloudWatch: giám sát và ghi log.
+- Amazon SNS: gửi thông báo lỗi.
+- AWS IAM: quản lý quyền truy cập các dịch vụ AWS.
+
+#### Thiết kế thành phần
+
+- **Frontend (React):** giao diện người dùng.
+- **Backend (Spring Boot):** xác thực, upload ảnh, truy vấn lịch sử.
+- **Amazon S3:** lưu trữ ảnh đầu vào và đầu ra.
+- **AWS Lambda:** xử lý ảnh bằng Pillow.
+- **Amazon DynamoDB:** lưu trạng thái xử lý và metadata.
+- **AWS KMS:** mã hóa dữ liệu lưu trữ.
+- **CloudWatch & SNS:** giám sát và cảnh báo hệ thống.
+
+---
+
+### 4. Triển khai kỹ thuật
 
 #### Các giai đoạn triển khai
 
-Dự án được triển khai theo các giai đoạn sau:
-
-**Nghiên cứu và thiết kế kiến trúc:**  
-Tìm hiểu các dịch vụ AWS (API Gateway, Lambda, Cognito, DynamoDB) và thiết kế kiến trúc serverless phù hợp với hệ thống.
-
-**Đánh giá chi phí và tính khả thi:**  
-Ước tính chi phí sử dụng AWS Free Tier và đánh giá khả năng vận hành của hệ thống.
-
-**Tối ưu kiến trúc:**  
-Thiết kế Lambda function hợp lý, giảm số lượng request không cần thiết và tối ưu luồng xử lý.
-
-**Phát triển và kiểm thử:**  
-Triển khai API Gateway, Lambda function và tích hợp Cognito. Thực hiện kiểm thử và hoàn thiện hệ thống.
-
----
+1. Phân tích yêu cầu và thiết kế kiến trúc hệ thống.
+2. Xây dựng Backend Spring Boot và API.
+3. Xây dựng giao diện người dùng bằng React.
+4. Triển khai AWS S3, Lambda, DynamoDB và IAM.
+5. Tích hợp các thành phần AWS với Backend.
+6. Kiểm thử chức năng và triển khai hoàn chỉnh.
 
 #### Yêu cầu kỹ thuật
 
-**Frontend:**
+**Frontend**
 
-- Gửi request đến API Gateway thông qua HTTP/REST API
-- Xử lý token từ Cognito để xác thực người dùng
+- React
+- TypeScript
+- Tailwind CSS
+- Ant Design
 
-**Backend (Serverless):**
+**Backend**
 
-- Lambda xử lý logic nghiệp vụ
-- API Gateway định tuyến request
+- Spring Boot
+- Spring Security
+- JWT Authentication
+- AWS SDK for Java
 
----
+**AWS**
 
-### 📌 5. Ước tính chi phí AWS
-
-Hệ thống tận dụng AWS Free Tier:
-
-- **AWS Lambda:** 1 triệu request/tháng → ~0 USD
-- **API Gateway:** 1 triệu request/tháng → ~0 USD
-- **Amazon DynamoDB:** 25GB lưu trữ chi phí → ~0 USD
-
-👉 Tổng chi phí gần như **0 USD/tháng** trong giai đoạn đầu
-
----
-
-### 📌 6. Đánh giá rủi ro
-
-- **Hiệu năng:** độ trễ nếu Lambda cold start
-- **Chi phí:** tăng khi vượt Free Tier
-- **Bảo mật:** cấu hình sai Cognito hoặc IAM
-- **Thiết kế API:** không tối ưu dẫn đến khó mở rộng
-
-**Giảm thiểu:**
-
-- Tối ưu Lambda
-- Sử dụng caching
-- Áp dụng best practices bảo mật
-- Monitoring qua CloudWatch
+- Amazon S3
+- AWS Lambda (Python + Pillow)
+- Amazon DynamoDB
+- AWS IAM
+- AWS KMS
+- Amazon CloudWatch
+- Amazon SNS
 
 ---
 
-### 📌 7. Kết quả kỳ vọng
+### 5. Lộ trình và mốc triển khai
 
-- Xây dựng hệ thống API serverless hoàn chỉnh
-- Tối ưu chi phí vận hành
-- Dễ dàng mở rộng trong tương lai
+- **Tuần 1:** Phân tích yêu cầu và thiết kế kiến trúc.
+- **Tuần 2:** Xây dựng Backend và Frontend.
+- **Tuần 3:** Triển khai các dịch vụ AWS.
+- **Tuần 4:** Tích hợp hệ thống, kiểm thử và hoàn thiện báo cáo.
 
-- Tạo nền tảng cho các hệ thống lớn hơn như:
-  - Microservices
-  - AI recommendation
-  - Real-time processing
+---
+
+### 6. Ước tính ngân sách
+
+Chi phí chủ yếu đến từ các dịch vụ AWS.
+
+**Hạ tầng dự kiến**
+
+- Amazon S3
+- AWS Lambda
+- Amazon DynamoDB
+- AWS KMS
+- Amazon CloudWatch
+- Amazon SNS
+
+Đối với quy mô thử nghiệm và học tập, tổng chi phí ước tính chỉ vài USD mỗi tháng nhờ tận dụng AWS Free Tier và mô hình thanh toán theo mức sử dụng (Pay-as-you-go).
+
+---
+
+### 7. Đánh giá rủi ro
+
+#### Ma trận rủi ro
+
+- Lambda xử lý thất bại.
+- Upload ảnh không thành công.
+- Vượt giới hạn Free Tier.
+- Người dùng tải lên ảnh không hợp lệ.
+- Mất kết nối với dịch vụ AWS.
+
+#### Chiến lược giảm thiểu
+
+- Sử dụng Amazon CloudWatch Logs để theo dõi hoạt động của AWS Lambda và hỗ trợ phân tích lỗi trong quá trình xử lý ảnh.
+- Sử dụng Amazon SNS để gửi cảnh báo đến quản trị viên khi quá trình tối ưu hóa ảnh xảy ra lỗi.
+- Kiểm tra định dạng và kích thước file ảnh trước khi đưa vào quá trình xử lý nhằm hạn chế lỗi từ dữ liệu đầu vào.
+- Áp dụng IAM Role với quyền truy cập tối thiểu cho các dịch vụ AWS nhằm tăng cường bảo mật.
+- Sử dụng AWS KMS để mã hóa dữ liệu hình ảnh lưu trữ trên Amazon S3.
+
+#### Kế hoạch dự phòng
+
+- Lưu trữ metadata và trạng thái xử lý trong Amazon DynamoDB giúp quản trị viên theo dõi lịch sử và xác định nguyên nhân khi xảy ra lỗi.
+- Duy trì log xử lý trên Amazon CloudWatch để hỗ trợ kiểm tra và khắc phục sự cố.
+- Sao lưu thông tin cấu hình quan trọng của hệ thống AWS nhằm hỗ trợ khôi phục khi cần thiết.
+
+---
+
+### 8. Kết quả kỳ vọng
+
+#### Cải tiến kỹ thuật
+
+- Tự động hóa hoàn toàn quy trình tối ưu hóa hình ảnh.
+- Giảm dung lượng lưu trữ nhưng vẫn duy trì chất lượng hình ảnh.
+- Theo dõi trạng thái xử lý theo thời gian thực.
+- Quản lý lịch sử xử lý tập trung.
+
+#### Giá trị dài hạn
+
+Hệ thống là nền tảng để phát triển các ứng dụng xử lý đa phương tiện trên nền tảng đám mây. Trong tương lai có thể mở rộng thêm các chức năng như chuyển đổi định dạng ảnh, watermark, AI Image Enhancement, nhận diện nội dung bằng Amazon Rekognition hoặc tích hợp CDN để tối ưu phân phối hình ảnh.

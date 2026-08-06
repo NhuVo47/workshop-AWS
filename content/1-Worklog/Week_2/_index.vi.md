@@ -5,69 +5,57 @@ chapter: false
 pre: " <b> 1.2 </b> "
 ---
 
-### 📌 Mục tiêu
+### Mục tiêu
 
-- Hiểu các dịch vụ cốt lõi của AWS: S3, DynamoDB, API Gateway, Lambda, Cognito
-- Thiết kế kiến trúc hệ thống theo mô hình serverless
-- Thiết kế cơ sở dữ liệu NoSQL phù hợp với bài toán
-- Phân tích và mô hình hóa các yêu cầu chức năng và phi chức năng
-- Lựa chọn các dịch vụ và cấu hình tài nguyên phù hợp, tối ưu chi phí (Free Tier)
-
----
-
-### 🛠 Công việc thực hiện
-
-| Công việc                                                                           | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo                     |
-| ----------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------- |
-| Tìm hiểu Amazon S3 (cách lưu trữ file audio, cơ chế object storage, quyền truy cập) | 16/03/2026   | 17/03/2026      | https://docs.aws.amazon.com/s3         |
-| Tìm hiểu DynamoDB (NoSQL, partition key, sort key, thiết kế bảng)                   | 17/03/2026   | 18/03/2026      | https://docs.aws.amazon.com/dynamodb   |
-| Tìm hiểu AWS Lambda và mô hình serverless                                           | 18/03/2026   | 19/03/2026      | https://docs.aws.amazon.com/lambda     |
-| Tìm hiểu API Gateway (REST API, routing request)                                    | 19/03/2026   | 19/03/2026      | https://docs.aws.amazon.com/apigateway |
-| Tìm hiểu AWS Cognito (Authentication & Authorization)                               | 19/03/2026   | 20/03/2026      | https://docs.aws.amazon.com/cognito    |
-| Phân tích yêu cầu hệ thống (User, Song, Playlist, Streaming)                        | 20/03/2026   | 20/03/2026      |                                        |
-| Thiết kế Database Schema (User, Song, Playlist)                                     | 20/03/2026   | 20/03/2026      |                                        |
-| Thiết kế kiến trúc hệ thống (S3 + Lambda + API Gateway + DynamoDB + Cognito)        | 20/03/2026   | 20/03/2026      |                                        |
-| Xác định tài nguyên AWS phù hợp với Free Tier                                       | 20/03/2026   | 20/03/2026      |                                        |
+- Tìm hiểu kiến trúc serverless trên AWS và mô hình triển khai hệ thống.
+- Nghiên cứu các dịch vụ AWS được sử dụng trong dự án.
+- Hiểu quy trình xử lý ảnh tự động trên nền tảng AWS.
+- Tìm hiểu cơ chế phân quyền và quản lý tài nguyên trên AWS.
+- Chuẩn bị kiến thức phục vụ cho quá trình phát triển và tích hợp hệ thống.
 
 ---
 
-### ✅ Kết quả nhận được
+### Công việc thực hiện
 
-- Hiểu rõ vai trò và cách hoạt động của từng dịch vụ AWS cốt lõi:
-  - S3: lưu trữ file audio dạng object, hỗ trợ truy cập qua URL
-  - DynamoDB: lưu trữ dữ liệu dạng NoSQL với hiệu năng cao
-  - Lambda: xử lý logic backend theo mô hình serverless
-  - API Gateway: trung gian nhận request từ client và gọi Lambda
-  - Cognito: quản lý người dùng, xác thực và phân quyền
+| Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| ---------- | ------------ | --------------- | ------------------ |
+| Tìm hiểu Amazon S3 và mô hình Object Storage | 29/06/2026 | 30/06/2026 | https://docs.aws.amazon.com/s3 |
+| Tìm hiểu Amazon DynamoDB và mô hình cơ sở dữ liệu NoSQL | 30/06/2026 | 01/07/2026 | https://docs.aws.amazon.com/dynamodb |
+| Tìm hiểu AWS Lambda và mô hình Serverless | 01/07/2026 | 02/07/2026 | https://docs.aws.amazon.com/lambda |
+| Tìm hiểu Amazon CloudWatch và cơ chế giám sát hệ thống | 02/07/2026 | 02/07/2026 | https://docs.aws.amazon.com/AmazonCloudWatch |
+| Tìm hiểu AWS IAM và cơ chế phân quyền giữa các dịch vụ | 02/07/2026 | 03/07/2026 | https://docs.aws.amazon.com/iam |
+| Phân tích kiến trúc và quy trình xử lý của hệ thống Image Optimization | 03/07/2026 | 03/07/2026 | |
+| Tìm hiểu cách các dịch vụ AWS tích hợp và trao đổi dữ liệu trong hệ thống | 03/07/2026 | 03/07/2026 | |
+| Nghiên cứu các dịch vụ AWS phù hợp với AWS Free Tier | 03/07/2026 | 03/07/2026 | |
 
-- Nắm được mô hình kiến trúc serverless và ưu điểm:
-  - Không cần quản lý server
-  - Tự động scale
-  - Tối ưu chi phí theo mức sử dụng
+---
 
-- Thiết kế được kiến trúc tổng thể của hệ thống:
-  - Frontend → API Gateway → Lambda → DynamoDB
-  - File audio được lưu trữ và truy xuất từ S3
-  - Authentication được xử lý bởi Cognito
+### Kết quả nhận được
 
-- Xây dựng được Database Schema NoSQL:
-  - Bảng User (userId, email, metadata)
-  - Bảng Song (songId, title, artist, fileUrl)
-  - Bảng Playlist (playlistId, userId, listSongIds)
+- Hiểu được vai trò của các dịch vụ AWS trong hệ thống xử lý ảnh tự động:
 
-- Hiểu cách thiết kế dữ liệu theo hướng truy vấn (query-first design) trong NoSQL
+  - **Amazon S3**
+    - Lưu trữ ảnh đầu vào và ảnh sau khi xử lý dưới dạng object.
+    - Quản lý dữ liệu thông qua bucket và object.
 
-- Phân tích và xác định được:
-  - Yêu cầu chức năng: đăng ký, đăng nhập, nghe nhạc, tạo playlist
-  - Yêu cầu phi chức năng: hiệu năng, bảo mật, khả năng mở rộng
+  - **AWS Lambda**
+    - Thực thi xử lý ảnh theo mô hình serverless.
+    - Tự động được kích hoạt khi có sự kiện từ Amazon S3.
 
-- Lựa chọn được các dịch vụ AWS phù hợp với Free Tier:
-  - S3 (lưu trữ miễn phí giới hạn)
-  - DynamoDB (free read/write capacity)
-  - Lambda (free request/tháng)
-  - API Gateway (giới hạn miễn phí)
+  - **Amazon DynamoDB**
+    - Hiểu cơ chế lưu trữ dữ liệu NoSQL.
+    - Nắm được cách sử dụng DynamoDB để lưu trữ thông tin của hệ thống.
 
-- Hình thành tư duy thiết kế hệ thống cloud theo hướng:
-  - Tách biệt frontend – backend
-  - Sử dụng dịch vụ managed
-  - Tối ưu chi phí ngay từ giai đoạn thiết kế
+  - **Amazon CloudWatch**
+    - Theo dõi log và trạng thái hoạt động của các dịch vụ AWS.
+    - Hỗ trợ giám sát và kiểm tra lỗi trong quá trình thực thi.
+
+  - **AWS IAM**
+    - Hiểu cơ chế quản lý người dùng, vai trò (Role) và chính sách (Policy).
+    - Nắm được nguyên tắc phân quyền giữa các dịch vụ AWS.
+
+- Hiểu được kiến trúc tổng thể của hệ thống xử lý ảnh tự động trên AWS và quy trình phối hợp giữa các dịch vụ.
+
+- Nắm được mô hình triển khai ứng dụng theo kiến trúc serverless, giúp giảm chi phí vận hành và dễ dàng mở rộng khi hệ thống phát triển.
+
+- Hiểu được tiêu chí lựa chọn dịch vụ AWS phù hợp với AWS Free Tier để tối ưu chi phí trong quá trình phát triển và thử nghiệm.

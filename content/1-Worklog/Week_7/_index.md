@@ -6,27 +6,34 @@ chapter: false
 pre: " <b> 1.7 </b> "
 ---
 
-### 📌 Objectives
+### Objectives
 
-- Perform testing of the entire developed frontend system
-- Fix errors and bugs
-- Check UI issues to ensure correct functionality and behavior
-
----
-
-### 🛠 Tasks Performed
-
-| Task                                                              | Start Date | End Date   | References |
-| ----------------------------------------------------------------- | ---------- | ---------- | ---------- |
-| Load and provide application data                                 | 20/04/2026 | 24/04/2026 |            |
-| Perform manual testing of the website and verify UI functionality | 20/04/2026 | 24/04/2026 |            |
-| Fix errors and resolve bugs                                       | 20/04/2026 | 24/04/2026 |            |
+- Complete the project's technical documentation.
+- Share knowledge about AWS services through technical articles.
+- Summarize the knowledge and skills gained during the internship.
+- Prepare for the handover of internship results.
 
 ---
 
-### ✅ Achievements
+### Tasks Performed
 
-- Provided data and metadata for website operations.
-- Performed full system testing, including features and UI components based on functional and non-functional requirements, ensuring the system operates consistently and stably.
+| Task | Start Date | Completion Date | Reference |
+|------|------------|-----------------|-----------|
+| Complete the project's technical documentation | 03/08/2026 | 05/08/2026 | |
+| Write technical blog posts to share AWS knowledge | 05/08/2026 | 08/08/2026 | |
+| Review and update workshop content | 08/08/2026 | 11/08/2026 | |
+| Summarize internship results and complete the internship report | 12/08/2026 | 15/08/2026 | |
 
 ---
+
+### Results Achieved
+
+- Completed the project's technical documentation and user guides.
+
+- Finished AWS knowledge-sharing articles, contributing to the summary and dissemination of knowledge researched during the internship.
+
+- Strengthened understanding of serverless architecture, AWS services, and cloud application development processes.
+
+- Improved skills in technical research, documentation writing, and presenting technical knowledge clearly.
+
+- Summarized professional knowledge, teamwork skills, and practical experience gained throughout the internship.

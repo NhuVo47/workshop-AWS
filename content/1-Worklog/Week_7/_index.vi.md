@@ -6,27 +6,34 @@ chapter: false
 pre: " <b> 1.7 </b> "
 ---
 
-### 📌 Mục tiêu
+### Mục tiêu
 
-- Kiểm thử toàn bộ hệ thống frontend đã xây dựng
-- Xử lý lỗi, bug.
-- Kiểm tra lỗi giao diện đảm bảo hoạt động đúng mục đích.
-
----
-
-### 🛠 Công việc thực hiện
-
-| Công việc                                                           | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
-| ------------------------------------------------------------------- | ------------ | --------------- | ------------------ |
-| Thực hiện nạp dữ liệu                                               | 20/04/2026   | 24/04/2026      |                    |
-| Thực hiện kiểm thử trang web thủ công, kiểm tra hoạt động giao diện | 20/04/2026   | 24/04/2026      |                    |
-| Xủ lý lỗi, bug                                                      | 20/04/2026   | 24/04/2026      |                    |
+- Hoàn thiện tài liệu kỹ thuật của dự án.
+- Chia sẻ kiến thức về các dịch vụ AWS thông qua bài viết kỹ thuật.
+- Tổng kết những kiến thức và kỹ năng đạt được trong quá trình thực tập.
+- Chuẩn bị bàn giao kết quả thực tập.
 
 ---
 
-### ✅ Kết quả nhận được
+### Công việc thực hiện
 
-- Cung cấp dữ liệu, metadata cho hoạt động trang web.
-- Kiểm thử toàn bộ hệ thống, các chức năng, giao diện dựa vào yêu cầu chức năng, phi chức năng đã đề ra, đảm bảo trang web hoạt động đồng nhất, ổn định.
+| Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| ---------- | ------------ | --------------- | ------------------ |
+| Hoàn thiện tài liệu kỹ thuật của dự án | 03/08/2026 | 05/08/2026 | |
+| Viết bài blog chia sẻ kiến thức về AWS | 05/08/2026 | 08/08/2026 | |
+| Rà soát và cập nhật nội dung workshop | 08/08/2026 | 11/08/2026 | |
+| Tổng kết kết quả thực tập và hoàn thiện báo cáo | 12/08/2026 | 15/08/2026 | |
 
 ---
+
+### Kết quả nhận được
+
+- Hoàn thiện tài liệu kỹ thuật và tài liệu hướng dẫn của dự án.
+
+- Hoàn thành các bài viết chia sẻ kiến thức về AWS, góp phần tổng hợp và phổ biến những kiến thức đã nghiên cứu trong quá trình thực tập.
+
+- Củng cố kiến thức về kiến trúc serverless, các dịch vụ AWS và quy trình phát triển ứng dụng trên nền tảng đám mây.
+
+- Nâng cao kỹ năng nghiên cứu tài liệu, biên soạn nội dung kỹ thuật và trình bày kiến thức một cách rõ ràng.
+
+- Tổng kết những kiến thức chuyên môn, kỹ năng làm việc nhóm và kinh nghiệm tích lũy được trong suốt quá trình thực tập.

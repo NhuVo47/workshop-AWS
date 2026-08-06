@@ -19,3 +19,4 @@ In addition to listing completed tasks, the log also highlights the challenges e
 5.  [Week 5](week_5/)
 6.  [Week 6](week_6/)
 7.  [Week 7](week_7/)
+8.  [Week 8](week_8/)

@@ -17,3 +17,4 @@ Bên cạnh việc liệt kê các nhiệm vụ đã thực hiện, nhật ký c
 5.  [Tuần 5](week_5/)
 6.  [Tuần 6](week_6/)
 7.  [Tuần 7](week_7/)
+8.  [Tuần 8](week_8/)

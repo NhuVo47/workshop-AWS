@@ -9,31 +9,32 @@ chapter: false
 
 ### Student information:
 
-**Full name:** Nguyễn Ngọc Anh
+**Full name:** Võ Ngọc Huỳnh Như
 
-**Phone number:** 0383609450
+**Phone number:** 0783977078
 
-**Email:** olivia.ngocanh208@gmail.com
+**Email:** vongochuynhnhu040703@gmail.com
 
 **University:** Sai Gon University (SGU)
 
-**Major:** Computer Science
+**Major:** Information Technology
 
-**Class:** DCT1223
+**Class:** DCT1222
 
 **Internship company:** AMAZON WEB SERVICES VIETNAM COMPANY LIMITED
 
-**Internship position:** FCAJ Cloud Intern
+**Internship position:** Workforce Bootcamp - First Cloud AI Journey
 
-**Internship duration:** From 09/03/2026 to 09/05/2026
+**Internship duration:** From 22/06/2026 to 15/08/2026
 
-![ConnectPrivate](/AWS_Workshop/images/avatar.jpeg)
+![ConnectPrivate](/AWS_workshop/images/avatar.png)
 
 ### Content
 
 1.  [Work Log ](1-worklog/)
 2.  [Proposal](2-proposal/)
-3.  [Events Participated](3-events_participated/)
-4.  [Workshop](4-workshop/)
-5.  [Self Assessment](5-selfassessment/)
-6.  [Sharing and Feedback](6-sharing_and_feedback/)
+3.  [BlogsPosted](3-BlogsPosted)
+4.  [Events Participated](4-events_participated/)
+5.  [Workshop](5-workshop/)
+6.  [Self Assessment](6-selfassessment/)
+7.  [Sharing and Feedback](7-sharing_and_feedback/)

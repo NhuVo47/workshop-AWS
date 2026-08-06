@@ -5,43 +5,32 @@ chapter: false
 pre: " <b> 1.6 </b> "
 ---
 
-### 📌 Mục tiêu
+### Mục tiêu
 
-- Xây dựng các API phục vụ chức năng quản lý (Người dùng, Nội dung, Nghệ sĩ)
-- Triển khai Lambda function xử lý logic backend
-- Kết nối API Gateway với Lambda
-- Thiết lập các phương thức gọi API cho FE.
-
----
-
-### 🛠 Công việc thực hiện
-
-| Công việc                            | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo                                                              |
-| ------------------------------------ | ------------ | --------------- | ------------------------------------------------------------------------------- |
-| Thiết lập các API quản lý người dùng | 13/04/2026   | 15/04/2026      | https://docs.aws.amazon.com/lambda <br/> https://docs.aws.amazon.com/apigateway |
-| Thiết lập các API quản lý nội dung   | 15/04/2026   | 16/04/2026      | https://docs.aws.amazon.com/lambda <br/> https://docs.aws.amazon.com/apigateway |
-| Thiết lập các API quản lý nghệ sĩ    | 16/04/2026   | 17/04/2026      | https://docs.aws.amazon.com/lambda <br/> https://docs.aws.amazon.com/apigateway |
+- Tham gia biên soạn tài liệu phục vụ workshop và dự án.
+- Nghiên cứu, tổng hợp kiến thức về các dịch vụ AWS được sử dụng trong hệ thống.
+- Hoàn thiện tài liệu hướng dẫn triển khai và sử dụng.
+- Chuẩn bị nội dung chia sẻ kiến thức về AWS.
 
 ---
 
-### ✅ Kết quả nhận được
+### Công việc thực hiện
 
-- Xây dựng được hệ thống API cơ bản:
-  - API quản lý User
-  - API xử lý báo cáo nội dung
-  - API quản lý Artist và yêu cầu nâng cấp
-  - API quản lý Album
-
-- Triển khai Lambda function:
-  - Xử lý logic nghiệp vụ cho từng module
-  - Kết nối với DynamoDB để lưu trữ dữ liệu
-
-- Thiết lập API Gateway:
-  - Tạo và cấu hình các endpoint RESTful
-  - Liên kết Lambda với từng API tương ứng
-
-- Chuẩn hóa dữ liệu hệ thống:
-  - Thiết kế request/response theo JSON thống nhất
-  - Đảm bảo dễ tích hợp với frontend
+| Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| ---------- | ------------ | --------------- | ------------------ |
+| Nghiên cứu tài liệu về các dịch vụ AWS sử dụng trong dự án | 27/07/2026 | 28/07/2026 | |
+| Tham gia biên soạn nội dung workshop | 28/07/2026 | 30/07/2026 | |
+| Hỗ trợ xây dựng tài liệu hướng dẫn triển khai và sử dụng hệ thống | 30/07/2026 | 31/07/2026 | |
+| Rà soát và cập nhật tài liệu dự án | 31/07/2026 | 31/07/2026 | |
 
 ---
+
+### Kết quả nhận được
+
+- Tham gia biên soạn nội dung workshop về các dịch vụ AWS được sử dụng trong dự án.
+
+- Hoàn thiện một số nội dung trong tài liệu hướng dẫn triển khai và sử dụng hệ thống.
+
+- Củng cố kiến thức về các dịch vụ AWS như Amazon S3, AWS Lambda, Amazon DynamoDB, AWS IAM và Amazon CloudWatch thông qua quá trình nghiên cứu và tổng hợp tài liệu.
+
+- Nâng cao kỹ năng biên soạn tài liệu kỹ thuật và trình bày nội dung theo hướng dễ hiểu, phục vụ cho hoạt động đào tạo và chia sẻ kiến thức.

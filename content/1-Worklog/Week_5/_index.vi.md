@@ -5,42 +5,35 @@ chapter: false
 pre: " <b> 1.5 </b> "
 ---
 
-### 📌 Mục tiêu
+### Mục tiêu
 
-- Hoàn thành xây dựng giao diện quản lý nội dung
-- Xây dựng trang quản lý người dùng
-- Thiết kế và hoàn thiện hệ thống route điều hướng giữa các trang
-
----
-
-### 🛠 Công việc thực hiện
-
-| Công việc                             | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo                                                                                                                             |
-| ------------------------------------- | ------------ | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Hoàn thiện giao diện quản lý nội dung | 06/04/2026   | 07/04/2026      | https://tailwindcss.com/docs/installation/using-vite <br/> https://www.youtube.com/watch?v=NclbvXqvnyA&list=PLPt6-BtUI22oD3xfWy9VI9klNNxqAnTjb |
-| Xây dựng giao diện quản lý Album      | 08/04/2026   | 08/04/2026      | https://tailwindcss.com/docs/installation/using-vite <br/> https://www.youtube.com/watch?v=NclbvXqvnyA&list=PLPt6-BtUI22oD3xfWy9VI9klNNxqAnTjb |
-| Xây dựng giao diện quản lý nghệ sĩ    | 08/04/2026   | 10/04/2026      | https://tailwindcss.com/docs/installation/using-vite <br/> https://www.youtube.com/watch?v=NclbvXqvnyA&list=PLPt6-BtUI22oD3xfWy9VI9klNNxqAnTjb |
-| Xây dựng xử lý điều hướng trang       | 10/04/2026   | 10/04/2026      | https://tailwindcss.com/docs/installation/using-vite <br/> https://www.youtube.com/watch?v=NclbvXqvnyA&list=PLPt6-BtUI22oD3xfWy9VI9klNNxqAnTjb |
+- Hoàn thiện chức năng đăng nhập và xác thực người dùng.
+- Tiếp tục kiểm thử các chức năng của hệ thống.
+- Xử lý các lỗi phát sinh trong quá trình tích hợp.
+- Đánh giá tính ổn định của hệ thống trước khi bàn giao.
 
 ---
 
-### ✅ Kết quả nhận được
+### Công việc thực hiện
 
-- Hoàn thiện các giao diện quản lý nội dung:
-  - Giao diện trang xử lý báo cáo nội dung.
-  - Các Dialog quản lý các báo cáo nội dung.
-
-- Xây dựng trang xử lý yêu cầu nghệ sĩ và quản lý nghệ sĩ.
-  - Giao diện quản lý nghệ sĩ và thông kê.
-  - Giao diện quản lý các yêu cầu nâng cấp tài khoản.
-  - Giao diện dialog xác nhận, quản lý thông tin nghệ sĩ.
-
-- Xây dựng trang quản lý album.
-  - Giao diện quản lý album.
-  - Giao diện các trang thông tin, thống kê và các dialog quản lý album.
-
-- Xây dựng route điều hướng các trang quản lý:
-  - Thiết lập routing giữa các trang Admin
-  - Sidebar hỗ trợ chuyển trang nhanh chóng
+| Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| ---------- | ------------ | --------------- | ------------------ |
+| Kiểm thử chức năng đăng nhập và xác thực người dùng | 20/07/2026 | 21/07/2026 | |
+| Kiểm tra luồng xử lý giữa frontend và backend | 21/07/2026 | 22/07/2026 | |
+| Phân tích và xử lý các lỗi phát sinh trong quá trình kiểm thử | 22/07/2026 | 23/07/2026 | |
+| Hoàn thiện chức năng và cập nhật source code | 23/07/2026 | 24/07/2026 | |
+| Tham gia trao đổi và rà soát kết quả cùng mentor | 24/07/2026 | 24/07/2026 | |
 
 ---
+
+### Kết quả nhận được
+
+- Hoàn thiện chức năng đăng nhập và xác thực người dùng theo yêu cầu.
+
+- Kiểm tra và xác nhận luồng xử lý giữa frontend và backend hoạt động ổn định.
+
+- Phát hiện và khắc phục các lỗi phát sinh trong quá trình kiểm thử, góp phần nâng cao chất lượng hệ thống.
+
+- Nâng cao kỹ năng kiểm thử phần mềm, phân tích lỗi và phối hợp với các thành viên trong nhóm để hoàn thiện chức năng.
+
+- Tích lũy thêm kinh nghiệm trong quy trình phát triển phần mềm, từ kiểm thử, xử lý lỗi đến hoàn thiện sản phẩm.

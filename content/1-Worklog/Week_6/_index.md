@@ -5,43 +5,32 @@ chapter: false
 pre: " <b> 1.6 </b> "
 ---
 
-### 📌 Objectives
+### Objectives
 
-- Build APIs to support management functions (Users, Content, Artists)
-- Deploy Lambda functions to handle backend logic
-- Connect API Gateway with Lambda
-- Set up API calling methods for the FE (Frontend)
-
----
-
-### 🛠 Tasks Performed
-
-| Task                           | Start Date | End Date   | References                                                                      |
-| ------------------------------ | ---------- | ---------- | ------------------------------------------------------------------------------- |
-| Set up user management APIs    | 13/04/2026 | 15/04/2026 | https://docs.aws.amazon.com/lambda <br/> https://docs.aws.amazon.com/apigateway |
-| Set up content management APIs | 15/04/2026 | 16/04/2026 | https://docs.aws.amazon.com/lambda <br/> https://docs.aws.amazon.com/apigateway |
-| Set up artist management APIs  | 16/04/2026 | 17/04/2026 | https://docs.aws.amazon.com/lambda <br/> https://docs.aws.amazon.com/apigateway |
+- Participate in preparing documentation for workshops and projects.
+- Research and summarize knowledge about AWS services used in the system.
+- Complete deployment and usage guides.
+- Prepare AWS knowledge-sharing materials.
 
 ---
 
-### ✅ Achievements
+### Tasks Performed
 
-- Built basic API system:
-  - User management API
-  - Content report processing API
-  - Artist management and account upgrade request API
-  - Album management API
-
-- Deployed Lambda functions:
-  - Handle business logic for each module
-  - Integrated with DynamoDB for data storage
-
-- Set up API Gateway:
-  - Created and configured RESTful endpoints
-  - Linked each API to corresponding Lambda functions
-
-- Standardized system data:
-  - Designed request/response in unified JSON format
-  - Ensured easy integration with Frontend
+| Task | Start Date | Completion Date | Reference |
+|------|------------|-----------------|-----------|
+| Research documentation about AWS services used in the project | 27/07/2026 | 28/07/2026 |  |
+| Participate in preparing workshop content | 28/07/2026 | 30/07/2026 | |
+| Support the development of system deployment and usage documentation | 30/07/2026 | 31/07/2026 | |
+| Review and update project documentation | 31/07/2026 | 31/07/2026 | |
 
 ---
+
+### Results Achieved
+
+- Participated in preparing workshop content about AWS services used in the project.
+
+- Completed several sections of the system deployment and usage documentation.
+
+- Strengthened knowledge of AWS services such as Amazon S3, AWS Lambda, Amazon DynamoDB, AWS IAM, and Amazon CloudWatch through research and documentation review.
+
+- Improved technical documentation skills and the ability to present technical content in a clear and understandable way for training and knowledge-sharing activities.

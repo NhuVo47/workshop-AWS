@@ -5,71 +5,57 @@ chapter: false
 pre: " <b> 1.2 </b> "
 ---
 
-### 📌 Objectives
+### Objectives
 
-- Understand core AWS services: S3, DynamoDB, API Gateway, Lambda, Cognito
-- Design system architecture using a serverless model
-- Design a NoSQL database suitable for the problem domain
-- Analyze and model functional and non-functional requirements
-- Select appropriate AWS services and configure resources, optimizing cost (Free Tier)
-
----
-
-### 🛠 Tasks Performed
-
-| Task                                                                           | Start Date | End Date   | References                             |
-| ------------------------------------------------------------------------------ | ---------- | ---------- | -------------------------------------- |
-| Study Amazon S3 (audio file storage, object storage mechanism, access control) | 16/03/2026 | 17/03/2026 | https://docs.aws.amazon.com/s3         |
-| Study DynamoDB (NoSQL, partition key, sort key, table design)                  | 17/03/2026 | 18/03/2026 | https://docs.aws.amazon.com/dynamodb   |
-| Study AWS Lambda and serverless architecture                                   | 18/03/2026 | 19/03/2026 | https://docs.aws.amazon.com/lambda     |
-| Study API Gateway (REST API, request routing)                                  | 19/03/2026 | 19/03/2026 | https://docs.aws.amazon.com/apigateway |
-| Study AWS Cognito (Authentication & Authorization)                             | 19/03/2026 | 20/03/2026 | https://docs.aws.amazon.com/cognito    |
-| Analyze system requirements (User, Song, Playlist, Streaming)                  | 20/03/2026 | 20/03/2026 |                                        |
-| Design Database Schema (User, Song, Playlist)                                  | 20/03/2026 | 20/03/2026 |                                        |
-| Design system architecture (S3 + Lambda + API Gateway + DynamoDB + Cognito)    | 20/03/2026 | 20/03/2026 |                                        |
-| Identify AWS resources suitable for Free Tier                                  | 20/03/2026 | 20/03/2026 |                                        |
+- Learn about the serverless architecture on AWS and system deployment models.
+- Research the AWS services used in the project.
+- Understand the automated image processing workflow on the AWS platform.
+- Learn about access control mechanisms and resource management on AWS.
+- Prepare the necessary knowledge for system development and integration.
 
 ---
 
-### ✅ Achievements
+### Tasks Performed
 
-- Gained understanding of core AWS services and their roles:
-  - S3: stores audio files as objects and provides URL-based access
-  - DynamoDB: high-performance NoSQL data storage
-  - Lambda: serverless backend logic execution
-  - API Gateway: handles client requests and routes them to Lambda
-  - Cognito: user management, authentication, and authorization
-
-- Understood serverless architecture model and its advantages:
-  - No server management required
-  - Automatic scaling
-  - Cost optimization based on usage
-
-- Designed overall system architecture:
-  - Frontend → API Gateway → Lambda → DynamoDB
-  - Audio files stored and retrieved from S3
-  - Authentication handled by Cognito
-
-- Built NoSQL database schema:
-  - User table (userId, email, metadata)
-  - Song table (songId, title, artist, fileUrl)
-  - Playlist table (playlistId, userId, listSongIds)
-
-- Learned query-first design approach in NoSQL systems
-
-- Identified system requirements:
-  - Functional: register, login, music streaming, playlist creation
-  - Non-functional: performance, security, scalability
-
-- Selected AWS Free Tier–suitable services:
-  - S3 (free storage limit)
-  - DynamoDB (free read/write capacity)
-  - Lambda (free request quota)
-  - API Gateway (free tier limits)
-
-- Developed cloud system design mindset:
-  - Separation of frontend and backend
-  - Use of managed services
-  - Early-stage cost optimization
+| Task | Start Date | Completion Date | Reference |
+|------|------------|-----------------|-----------|
+| Study Amazon S3 and the Object Storage model | 29/06/2026 | 30/06/2026 | https://docs.aws.amazon.com/s3 |
+| Study Amazon DynamoDB and the NoSQL database model | 30/06/2026 | 01/07/2026 | https://docs.aws.amazon.com/dynamodb |
+| Study AWS Lambda and the Serverless model | 01/07/2026 | 02/07/2026 | https://docs.aws.amazon.com/lambda |
+| Study Amazon CloudWatch and system monitoring mechanisms | 02/07/2026 | 02/07/2026 | https://docs.aws.amazon.com/AmazonCloudWatch |
+| Study AWS IAM and access control mechanisms between services | 02/07/2026 | 03/07/2026 | https://docs.aws.amazon.com/iam |
+| Analyze the architecture and processing workflow of the Image Optimization system | 03/07/2026 | 03/07/2026 | |
+| Research how AWS services integrate and exchange data within the system | 03/07/2026 | 03/07/2026 | |
+| Research AWS services suitable for AWS Free Tier usage | 03/07/2026 | 03/07/2026 | |
 
 ---
+
+### Results Achieved
+
+- Understood the roles of AWS services in the automated image processing system:
+
+  - **Amazon S3**
+    - Used to store input images and processed images as objects.
+    - Managed data through buckets and objects.
+
+  - **AWS Lambda**
+    - Executes image processing tasks using the serverless model.
+    - Automatically triggered by events from Amazon S3.
+
+  - **Amazon DynamoDB**
+    - Understood the NoSQL data storage mechanism.
+    - Learned how DynamoDB is used to store system information.
+
+  - **Amazon CloudWatch**
+    - Monitors logs and the operational status of AWS services.
+    - Supports system monitoring and error troubleshooting during execution.
+
+  - **AWS IAM**
+    - Understood the management of users, roles, and policies.
+    - Learned the principles of access control between AWS services.
+
+- Gained an overall understanding of the automated image processing architecture on AWS and the workflow between different services.
+
+- Understood how to deploy applications using a serverless architecture, which helps reduce operational costs and improve scalability as the system grows.
+
+- Learned the criteria for selecting suitable AWS services within the AWS Free Tier to optimize costs during development and testing.

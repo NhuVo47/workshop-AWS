@@ -5,36 +5,37 @@ chapter: false
 pre: " <b> 1.4 </b> "
 ---
 
-### 📌 Objectives
+### Objectives
 
-- Design and build the Admin interface
-- Develop basic management pages
-
----
-
-### 🛠 Tasks Performed
-
-| Task                                         | Start Date | End Date   | References                                                                                                                                     |
-| -------------------------------------------- | ---------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Design Admin management interface            | 30/03/2026 | 30/03/2026 |                                                                                                                                                |
-| Build user and content management interfaces | 30/03/2026 | 05/04/2026 | https://tailwindcss.com/docs/installation/using-vite <br/> https://www.youtube.com/watch?v=NclbvXqvnyA&list=PLPt6-BtUI22oD3xfWy9VI9klNNxqAnTjb |
+- Test the APIs used for user login and authentication functionality.
+- Verify the data processing workflow between the frontend and backend.
+- Complete the integration of system components.
+- Detect and resolve issues that occur during the testing process.
 
 ---
 
-### ✅ Achievements
+### Tasks Performed
 
-- Completed layout, management pages, and related page system including:
-  - User management page
-  - Content management page
-
-- Completed building interfaces for pages:
-  - User management page:
-    - Main user management page with statistical views
-    - User information page
-    - Management dialogs (Add, Update information), confirmation windows
-  - Content management page:
-    - Main content management page with statistical views
-    - Content information page
-    - Management dialogs (Add, Update information), confirmation windows
+| Task | Start Date | Completion Date | Reference |
+|------|------------|-----------------|-----------|
+| Test authentication APIs using Postman | 13/07/2026 | 14/07/2026 | https://www.postman.com/ |
+| Verify the data processing workflow between the frontend and backend | 14/07/2026 | 15/07/2026 | |
+| Support the integration of the login functionality with the user interface | 15/07/2026 | 16/07/2026 | |
+| Verify user information storage and retrieval in DynamoDB | 16/07/2026 | 17/07/2026 | https://docs.aws.amazon.com/dynamodb |
+| Fix issues encountered during the integration and testing process | 17/07/2026 | 17/07/2026 | |
 
 ---
+
+### Results Achieved
+
+- Successfully tested the APIs for user login and authentication functionality.
+
+- Verified that the data processing workflow between the frontend and backend operates correctly according to the system design.
+
+- Completed the integration of the login functionality with the user interface.
+
+- Verified the storage and retrieval of user information using Amazon DynamoDB.
+
+- Identified and resolved issues during the testing process, improving system stability.
+
+- Improved skills in API testing, error handling, and integrating different system components.
