@@ -59,6 +59,6 @@ Các nội dung chính bao gồm:
 
 #### Một số hình ảnh khi tham gia sự kiện
 
-![ConnectPrivate](/AWS_workshop/images/events/event2_2.png)
-![ConnectPrivate](/AWS_workshop/images/events/event2_1.png)
+![ConnectPrivate](/images/events/event2_2.png)
+![ConnectPrivate](/images/events/event2_1.png)
   > AWS — Enterprise Cloud Architectures & Industry Applications đã mang đến cho tôi cơ hội tiếp cận những chia sẻ thực tế từ các chuyên gia trong lĩnh vực Cloud Computing và Generative AI. Thông qua chương trình, tôi hiểu rõ hơn về xu hướng phát triển của ngành, định hướng nghề nghiệp cũng như những kỹ năng cần trang bị để đáp ứng yêu cầu của doanh nghiệp. Đây là một trải nghiệm bổ ích, góp phần mở rộng kiến thức chuyên môn và tạo thêm động lực cho quá trình học tập, thực tập cũng như phát triển nghề nghiệp trong tương lai.

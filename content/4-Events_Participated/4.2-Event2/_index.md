@@ -63,7 +63,7 @@ The main topics included:
 
 #### Event Photos
 
-![ConnectPrivate](/AWS_workshop/images/events/event2_2.png)
-![ConnectPrivate](/AWS_workshop/images/events/event2_1.png)
+![ConnectPrivate](../../images/events/event2_2.png)
+![ConnectPrivate](../../images/events/event2_1.png)
 
 > **AWS — Enterprise Cloud Architectures & Industry Applications** provided me with an excellent opportunity to learn from industry experts in Cloud Computing and Generative AI. Through this program, I gained a better understanding of current technology trends, career opportunities, and the skills required to succeed in the Cloud industry. Overall, it was a valuable learning experience that broadened my technical knowledge and motivated me to continue developing my expertise throughout my academic and professional journey.

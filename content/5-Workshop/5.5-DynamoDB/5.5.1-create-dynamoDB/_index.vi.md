@@ -101,7 +101,7 @@ Create table
 
 để tạo DynamoDB Table mới.
 
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.5-DynamoDB/dynamodb-console.png)
+![dynamodb-console](/images/5-Workshop/5.5-DynamoDB/dynamodb-console.png)
 
 ---
 
@@ -218,7 +218,7 @@ processingId
 
 ```
 
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.5-DynamoDB/table-key.png)
+![table-key](/images/5-Workshop/5.5-DynamoDB/table-key.png)
 
 ---
 
@@ -236,7 +236,7 @@ Create table
 
 AWS tiến hành tạo bảng.
 
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.5-DynamoDB/create-table.png)
+![create-table](/images/5-Workshop/5.5-DynamoDB/create-table.png)
 
 ---
 

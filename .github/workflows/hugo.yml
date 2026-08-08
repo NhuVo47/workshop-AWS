@@ -36,6 +36,7 @@
 #       - name: Deploy to GitHub Pages
 #         id: deployment
 #         uses: actions/deploy-pages@v5
+
 name: Deploy Hugo site to GitHub Pages
 
 on:
@@ -78,7 +79,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build site
-        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: hugo --minify #--baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

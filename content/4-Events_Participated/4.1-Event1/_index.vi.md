@@ -91,7 +91,7 @@ Hỗ trợ phát triển tư duy thiết kế hệ thống khi thực hiện cá
 
 #### Một số hình ảnh khi tham gia sự kiện
 
-![ConnectPrivate](/AWS_workshop/images/events/event_cloud_architech1.JPG)
-![ConnectPrivate](/AWS_workshop/images/events/event_cloud_architech2.JPG)
+![ConnectPrivate](/images/events/event_cloud_architech1.JPG)
+![ConnectPrivate](/images/events/event_cloud_architech2.JPG)
 
   > Cloud Architect Event là cơ hội ôn tập và vận dụng kiến thức Cloud Computing thông qua các hoạt động mang tính thực hành. Bên cạnh việc củng cố nền tảng về kiến trúc hệ thống, chương trình còn giúp mỗi thành viên rèn luyện khả năng phân tích, làm việc nhóm và xử lý tình huống dưới áp lực thời gian. Đây là một trải nghiệm hữu ích, góp phần nâng cao cả kiến thức chuyên môn lẫn các kỹ năng cần thiết cho quá trình học tập và công việc sau này.

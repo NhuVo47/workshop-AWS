@@ -27,7 +27,7 @@ chapter: false
 
 **Thời gian thực tập:** Từ ngày 22/06/2026 đến ngày 15/08/2026
 
-![ConnectPrivate](/AWS_workshop/images/avatar.png)
+![ConnectPrivate](/images/avatar.png)
 
 ### Nội dung
 

@@ -66,7 +66,7 @@ Create bucket
 
 to start creating the bucket for image storage.
 
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.3-S3-setup/s3-dashboard.png)
+![s3-console](../../../images/5-Workshop/5.3-S3-setup/s3-dashboard.png)
 
 ---
 
@@ -86,8 +86,7 @@ auto-images-input-bucket
 An Amazon S3 Bucket name must be globally unique across AWS. If the bucket name already exists, you must choose a different name.
 {{% /notice %}}
 
-
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.3-S3-setup/s3-create-name-bucket.png)
+![s3-create-name-bucket](../../../images/5-Workshop/5.3-S3-setup/s3-create-name-bucket.png)
 
 ---
 
@@ -111,7 +110,7 @@ Block all public access
 User-uploaded images are not publicly accessible. Access to the images is controlled through the Backend API and IAM permissions.
 {{% /notice %}}
 
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.3-S3-setup/s3-access.png)
+![input-bucket-access](../../../images/5-Workshop/5.3-S3-setup/s3-access.png)
 
 ---
 
@@ -129,31 +128,29 @@ Then select the KMS Key created for the system.
 
 Using AWS KMS helps protect the original images while they are stored in Amazon S3.
 
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.3-S3-setup/open-kms-dashboard.png)
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.3-S3-setup/kms-2.png)
+![s3-kms-encryption](../../../images/5-Workshop/5.3-S3-setup/open-kms-dashboard.png)
+![s3-kms-encryption](../../../images/5-Workshop/5.3-S3-setup/kms-2.png)
 Enter the alias name:
 
 ```
 image-optimization-kms
 ```
 
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.3-S3-setup/kms-3.png)
+![s3-kms-encryption](../../../images/5-Workshop/5.3-S3-setup/kms-3.png)
 
 Select the IAM User that manages the system:
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.3-S3-setup/kms-4.png)
+![s3-kms-encryption](../../../images/5-Workshop/5.3-S3-setup/kms-4.png)
 
 Add the Lambda IAM Role:
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.3-S3-setup/kms-5.png)
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.3-S3-setup/kms-6.png)
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.3-S3-setup/kms-7.png)
+![s3-kms-encryption](../../../images/5-Workshop/5.3-S3-setup/kms-5.png)
+![s3-kms-encryption](../../../images/5-Workshop/5.3-S3-setup/kms-6.png)
+![s3-kms-encryption](../../../images/5-Workshop/5.3-S3-setup/kms-7.png)
 
 Select the KMS Key that was just created, then click Create bucket:
-![s3-kms-encryption](/images/5-Workshop/5.3-S3-setup/kms-8.png)
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.3-S3-setup/kms-8.png)
+![s3-kms-encryption](../../../images/5-Workshop/5.3-S3-setup/kms-8.png)
 
 The Input Bucket has now been created successfully:
-
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.3-S3-setup/create-input-bucket.png)
+![create-input-bucket](../../../images/5-Workshop/5.3-S3-setup/create-input-bucket.png)
 
 ---
 
@@ -189,8 +186,7 @@ thumbnails/
 ```
 
 The Output Bucket has now been created successfully:
-
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.3-S3-setup/create-output-bucket.png)
+![create-output-bucket](../../../images/5-Workshop/5.3-S3-setup/create-output-bucket.png)
 
 ---
 
@@ -203,7 +199,7 @@ After completing the setup, the Amazon S3 Bucket list will display:
 | auto-images-input-bucket  | Stores the original images uploaded by users |
 | auto-images-output-bucket | Stores the optimized images and thumbnails   |
 
-![ConnectPrivate](/AWS_workshop/images/5-Workshop/5.3-S3-setup/s3-dashboard.png)
+![bucket-list](../../../images/5-Workshop/5.3-S3-setup/s3-dashboard.png)
 
 ---
 

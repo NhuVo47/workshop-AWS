@@ -9,7 +9,7 @@ chapter: false
 
 ### Student information:
 
-**Full name:** Võ Ngọc Huỳnh Như
+**Full name:** Vo Ngoc Huynh Nhu
 
 **Phone number:** 0783977078
 
@@ -27,7 +27,7 @@ chapter: false
 
 **Internship duration:** From 22/06/2026 to 15/08/2026
 
-![ConnectPrivate](/AWS_workshop/images/avatar.png)
+![ConnectPrivate](/images/avatar.png)
 
 ### Content
 

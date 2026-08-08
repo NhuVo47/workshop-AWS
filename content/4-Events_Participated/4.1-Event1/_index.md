@@ -91,7 +91,8 @@ The questions focused on Cloud Computing and system architecture design. The con
 
 #### Event Photos
 
-![ConnectPrivate](/AWS_workshop/images/events/event_cloud_architech1.JPG)
-![ConnectPrivate](/AWS_workshop/images/events/event_cloud_architech2.JPG)
+
+![overview](../../images/events/event_cloud_architech1.JPG)
+![ConnectPrivate](../../images/events/event_cloud_architech2.JPG)
 
 > The Cloud Architect Event provided an excellent opportunity to review and apply Cloud Computing knowledge through practical activities. In addition to strengthening my understanding of system architecture, the event helped me improve my analytical thinking, teamwork, and decision-making skills under time pressure. Overall, it was a valuable learning experience that enhanced both my technical knowledge and the professional skills required for future academic and career development.

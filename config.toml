@@ -1,4 +1,5 @@
-baseURL = "https://oliviangocanh.github.io/AWS_workshop/"
+baseURL = "https://nhuvo47.github.io/aws_project/"
+canonifyURLs = true
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 
@@ -23,6 +24,7 @@ title = "AWS System Manager"
 weight = 1
 languageName = "English"
 
+
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fab fa-facebook'></i> AWS Study Group"
 identifier = "AWS Study Group FB"
@@ -33,6 +35,7 @@ weight = 20
 title = "AWS System Manager"
 weight = 2
 languageName = "Tiếng Việt"
+
 
 [[Languages.vi.menu.shortcuts]]
 name = "<i class='fab fa-facebook'></i> AWS Study Group"

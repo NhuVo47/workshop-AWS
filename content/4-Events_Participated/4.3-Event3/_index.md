@@ -70,7 +70,7 @@ During the hands-on lab, I completed the practical exercises under the guidance 
 
 #### Event Photos
 
-![ConnectPrivate](/AWS_workshop/images/events/event3_2.jpg)
-![ConnectPrivate](/AWS_workshop/images/events/event3_1.jpg)
+![ConnectPrivate](../../images/events/event3_2.jpg)
+![ConnectPrivate](../../images/events/event3_1.jpg)
 
 > The Amazon Bedrock AgentCore Workshop provided an excellent opportunity to combine theoretical learning with hands-on practice on the AWS platform. By completing the lab exercises, I gained a deeper understanding of AI Agent development and the integration of AWS services within real-world applications. Through this workshop, I not only expanded my knowledge of Cloud Computing and Generative AI but also gained practical experience that will support my future studies and professional development.

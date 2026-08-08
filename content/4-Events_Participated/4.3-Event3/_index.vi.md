@@ -70,7 +70,7 @@ Workshop giúp tôi có thêm kinh nghiệm thực tế về việc xây dựng 
 
 #### Một số hình ảnh khi tham gia sự kiện
 
-![ConnectPrivate](/AWS_workshop/images/events/event3_2.jpg)
-![ConnectPrivate](/AWS_workshop/images/events/event3_1.jpg)
+![ConnectPrivate](/images/events/event3_2.jpg)
+![ConnectPrivate](/images/events/event3_1.jpg)
 
   > Workshop Amazon Bedrock AgentCore là một hoạt động giúp tôi kết hợp giữa việc tiếp thu kiến thức và thực hành trên nền tảng AWS. Việc trực tiếp triển khai các bài lab giúp tôi hiểu rõ hơn về cách xây dựng AI Agent cũng như cách tích hợp các dịch vụ AWS trong một ứng dụng thực tế. Thông qua chương trình, tôi không chỉ mở rộng kiến thức về Cloud Computing và Generative AI mà còn tích lũy thêm kinh nghiệm thực hành để phục vụ cho quá trình học tập và công việc sau này.
